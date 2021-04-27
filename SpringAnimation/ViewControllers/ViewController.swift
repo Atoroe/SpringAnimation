@@ -9,7 +9,6 @@ import Spring
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var springAnimationView: SpringView!
     @IBOutlet weak var presetLabel: UILabel!
     
@@ -28,7 +27,10 @@ class ViewController: UIViewController {
         properties = AnimationProperties.getProperties()
         runAnimation.setTitle(properties.animation, for: .normal)
     }
-    
+}
+
+//MARK: - Spring Animation
+extension ViewController {
     private func animateView(with properties: AnimationProperties) {
         setOptions(with: properties)
         springAnimationView.animate()
@@ -57,5 +59,4 @@ class ViewController: UIViewController {
         
         runAnimation.setTitle(text.animation, for: .normal)
     }
-    
 }
