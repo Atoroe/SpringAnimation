@@ -56,15 +56,47 @@
 		E3A1992326384218007C6C5C /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				E3A1992426384218007C6C5C /* AppDelegate.swift */,
-				E3A1992626384218007C6C5C /* SceneDelegate.swift */,
-				E3A1992826384218007C6C5C /* ViewController.swift */,
-				E3A1992A26384218007C6C5C /* Main.storyboard */,
-				E3A1992D2638421E007C6C5C /* Assets.xcassets */,
-				E3A1992F2638421E007C6C5C /* LaunchScreen.storyboard */,
-				E3A199322638421E007C6C5C /* Info.plist */,
+				E3A1993926384236007C6C5C /* Supporting */,
+				E3A1993B26384244007C6C5C /* ViewControllers */,
+				E3A1993D26384251007C6C5C /* Storyboards */,
+				E3A1993E26384265007C6C5C /* Resources */,
 			);
 			path = SpringAnimation;
+			sourceTree = "<group>";
+		};
+		E3A1993926384236007C6C5C /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E3A1992426384218007C6C5C /* AppDelegate.swift */,
+				E3A1992626384218007C6C5C /* SceneDelegate.swift */,
+				E3A199322638421E007C6C5C /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		E3A1993B26384244007C6C5C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3A1992826384218007C6C5C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3A1993D26384251007C6C5C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3A1992A26384218007C6C5C /* Main.storyboard */,
+				E3A1992F2638421E007C6C5C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3A1993E26384265007C6C5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3A1992D2638421E007C6C5C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
-				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				INFOPLIST_FILE = SpringAnimation/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
-				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				INFOPLIST_FILE = SpringAnimation/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
