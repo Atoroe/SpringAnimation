@@ -20,10 +20,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var runAnimation: UIButton!
     
+    var properties = AnimationProperties.getProperties()
+    
     @IBAction func runAnimationTapped() {
-        let animationProperties = AnimationProperties.getProperties()
-        setText(text: animationProperties)
-        animateView(with: animationProperties)
+        setText(text: properties)
+        animateView(with: properties)
+        properties = AnimationProperties.getProperties()
+        runAnimation.setTitle(properties.animation, for: .normal)
     }
     
     private func animateView(with properties: AnimationProperties) {
@@ -43,9 +46,6 @@ class ViewController: UIViewController {
         springAnimationView.velocity = property.velocity
         springAnimationView.scaleX = property.scale
         springAnimationView.scaleY = property.scale
-        springAnimationView.x = property.x
-        springAnimationView.y = property.y
-        springAnimationView.rotate = property.rotate
     }
     
     private func setText(text: AnimationProperties) {
