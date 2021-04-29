@@ -15,6 +15,7 @@
 		E3A1992E2638421E007C6C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A1992D2638421E007C6C5C /* Assets.xcassets */; };
 		E3A199312638421E007C6C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A1992F2638421E007C6C5C /* LaunchScreen.storyboard */; };
 		E3A1994826385167007C6C5C /* AnimationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A1994726385167007C6C5C /* AnimationProperties.swift */; };
+		E3A80555263AEECE00645B19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A80554263AEECE00645B19 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E3A199302638421E007C6C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A199322638421E007C6C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3A1994726385167007C6C5C /* AnimationProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProperties.swift; sourceTree = "<group>"; };
+		E3A80554263AEECE00645B19 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		E3A1992326384218007C6C5C /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E3A80553263AEEAD00645B19 /* Manager */,
 				E3A1994626384D2C007C6C5C /* Models */,
 				E3A1993B26384244007C6C5C /* ViewControllers */,
 				E3A1993D26384251007C6C5C /* Storyboards */,
@@ -132,6 +135,14 @@
 				E3A1994726385167007C6C5C /* AnimationProperties.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E3A80553263AEEAD00645B19 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E3A80554263AEECE00645B19 /* DataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A1992926384218007C6C5C /* ViewController.swift in Sources */,
+				E3A80555263AEECE00645B19 /* DataManager.swift in Sources */,
 				E3A1992526384218007C6C5C /* AppDelegate.swift in Sources */,
 				E3A1994826385167007C6C5C /* AnimationProperties.swift in Sources */,
 				E3A1992726384218007C6C5C /* SceneDelegate.swift in Sources */,
