@@ -15,6 +15,19 @@ struct AnimationProperties {
     let damping: Double
     let velocity: Double
     let scale: Double
+    
+    var textDescription: [String] {
+        [
+            animation,
+            curve,
+            String(format: "%.2f", force),
+            String(format: "%.2f", duration),
+            String(format: "%.2f", delay),
+            String(format: "%.2f", damping),
+            String(format: "%.2f", velocity),
+            String(format: "%.2f", scale)
+        ]
+    }
 }
 
 
