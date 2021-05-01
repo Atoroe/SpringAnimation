@@ -10,53 +10,33 @@ import Spring
 class ViewController: UIViewController {
     
     @IBOutlet weak var springAnimationView: SpringView!
-    @IBOutlet weak var presetLabel: UILabel!
-    
-    @IBOutlet weak var curveLabel: UILabel!
-    @IBOutlet weak var forceLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
-    @IBOutlet weak var delayLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var runAnimation: UIButton!
     
-    var properties = AnimationProperties.getProperties()
+    var property = Property.getProperty()
     
     @IBAction func runAnimationTapped() {
-        setText(text: properties)
-        animateView(with: properties)
-        properties = AnimationProperties.getProperties()
-        runAnimation.setTitle(properties.animation, for: .normal)
+        descriptionLabel.text = property.description
+        startAnimation(with: property)
+        property = Property.getProperty()
+        runAnimation.setTitle(property.animation, for: .normal)
     }
 }
 
 //MARK: - Spring Animation
 extension ViewController {
-    private func animateView(with properties: AnimationProperties) {
-        setOptions(with: properties)
-        springAnimationView.animate()
-    }
-    
-    private func setOptions(with property: AnimationProperties) {
+    private func startAnimation(with property: Property) {
         springAnimationView.animation = property.animation
         springAnimationView.curve = property.curve
+        springAnimationView.force = CGFloat(property.force)
+        springAnimationView.duration = CGFloat(property.duration)
+        springAnimationView.delay = CGFloat(property.delay)
+        springAnimationView.damping = CGFloat(property.damping)
+        springAnimationView.velocity = CGFloat(property.velocity)
+        springAnimationView.scaleX = 0
+        springAnimationView.scaleY = 0
         
-        springAnimationView.force = property.force
-        springAnimationView.duration = property.duration
-        springAnimationView.delay = property.delay
-        
-        springAnimationView.damping = property.damping
-        springAnimationView.velocity = property.velocity
-        springAnimationView.scaleX = property.scale
-        springAnimationView.scaleY = property.scale
-    }
-    
-    private func setText(text: AnimationProperties) {
-        presetLabel.text = "preset: \(text.animation)"
-        curveLabel.text = "curve: \(text.curve)"
-        forceLabel.text = "force: \(String(format: "%.2f", Double(text.force)))"
-        durationLabel.text = "duration: \(String(format: "%.2f", Double(text.duration)))"
-        delayLabel.text = "delay: \(String(format: "%.2f", Double(text.delay)))"
-        
-        runAnimation.setTitle(text.animation, for: .normal)
+        springAnimationView.animate()
     }
 }

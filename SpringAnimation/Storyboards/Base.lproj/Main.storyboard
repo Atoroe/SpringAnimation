@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,55 +13,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uc7-8V-5tJ" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="50" y="70" width="220" height="150"/>
+                                <rect key="frame" x="50" y="114" width="275" height="150"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GGp-6I-lwn">
-                                        <rect key="frame" x="10" y="10" width="200" height="130"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-RI-J46">
-                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03J-lk-4eU">
-                                                <rect key="frame" x="0.0" y="27" width="47" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWt-Ot-3L5">
-                                                <rect key="frame" x="0.0" y="54.5" width="44" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seY-wF-T2e">
-                                                <rect key="frame" x="0.0" y="81.5" width="68" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-ZL-Dsk">
-                                                <rect key="frame" x="0.0" y="109" width="45.5" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCG-lE-O5D">
+                                        <rect key="frame" x="16" y="16" width="243" height="118"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XCG-lE-O5D" secondAttribute="bottom" constant="16" id="DNu-Cl-w3m"/>
+                                    <constraint firstAttribute="trailing" secondItem="XCG-lE-O5D" secondAttribute="trailing" constant="16" id="F6U-Vk-InA"/>
                                     <constraint firstAttribute="height" constant="150" id="HFv-60-XjH"/>
-                                    <constraint firstAttribute="trailing" secondItem="GGp-6I-lwn" secondAttribute="trailing" constant="10" id="NrR-v4-Emq"/>
-                                    <constraint firstItem="GGp-6I-lwn" firstAttribute="top" secondItem="uc7-8V-5tJ" secondAttribute="top" constant="10" id="RcY-OM-Tc0"/>
-                                    <constraint firstAttribute="bottom" secondItem="GGp-6I-lwn" secondAttribute="bottom" constant="10" id="c7g-CC-UYC"/>
-                                    <constraint firstItem="GGp-6I-lwn" firstAttribute="leading" secondItem="uc7-8V-5tJ" secondAttribute="leading" constant="10" id="dDC-hc-TQk"/>
+                                    <constraint firstItem="XCG-lE-O5D" firstAttribute="top" secondItem="uc7-8V-5tJ" secondAttribute="top" constant="16" id="LMR-Fs-vgr"/>
+                                    <constraint firstItem="XCG-lE-O5D" firstAttribute="leading" secondItem="uc7-8V-5tJ" secondAttribute="leading" constant="16" id="joZ-LF-NYZ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -70,7 +41,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnq-Vp-Usz" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="50" y="380" width="220" height="30"/>
+                                <rect key="frame" x="80" y="678" width="215" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Run Animation">
                                     <color key="titleColor" red="0.94870227575302124" green="0.97195786237716675" blue="0.98080927133560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,26 +62,24 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gnq-Vp-Usz" secondAttribute="bottom" constant="70" id="39u-XP-ihZ"/>
                             <constraint firstItem="uc7-8V-5tJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="EO6-VO-oYP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uc7-8V-5tJ" secondAttribute="trailing" constant="50" id="QxD-Uj-9Ot"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gnq-Vp-Usz" secondAttribute="trailing" constant="50" id="UYB-F3-8g8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gnq-Vp-Usz" secondAttribute="trailing" id="UYB-F3-8g8"/>
                             <constraint firstItem="uc7-8V-5tJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cMV-cS-eMn"/>
-                            <constraint firstItem="Gnq-Vp-Usz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="iZt-gL-2Fm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Gnq-Vp-Usz" secondAttribute="trailing" constant="80" id="efc-eF-wbr"/>
+                            <constraint firstItem="Gnq-Vp-Usz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iZt-gL-2Fm"/>
                             <constraint firstItem="Gnq-Vp-Usz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kbb-wt-dZU"/>
                             <constraint firstItem="uc7-8V-5tJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="nn9-WP-lsv"/>
+                            <constraint firstItem="Gnq-Vp-Usz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="rac-hf-H6k"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="03J-lk-4eU" id="i4N-Lt-Pbr"/>
-                        <outlet property="delayLabel" destination="mnJ-ZL-Dsk" id="phH-Gy-UUq"/>
-                        <outlet property="durationLabel" destination="seY-wF-T2e" id="Wnq-7O-nrb"/>
-                        <outlet property="forceLabel" destination="DWt-Ot-3L5" id="a3N-bS-6fC"/>
-                        <outlet property="presetLabel" destination="BHw-RI-J46" id="pvg-jk-GIl"/>
+                        <outlet property="descriptionLabel" destination="XCG-lE-O5D" id="vo2-Yd-gJg"/>
                         <outlet property="runAnimation" destination="Gnq-Vp-Usz" id="Bbi-kK-EzC"/>
                         <outlet property="springAnimationView" destination="uc7-8V-5tJ" id="4Vt-e4-TUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95.652173913043484" y="79.6875"/>
+            <point key="canvasLocation" x="95.625" y="78.75"/>
         </scene>
     </scenes>
     <resources>

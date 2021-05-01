@@ -6,7 +6,7 @@
 //
 import Spring
 
-struct AnimationProperties {
+struct Property {
     let animation: String
     let curve: String
     let force: Double
@@ -16,19 +16,35 @@ struct AnimationProperties {
     let velocity: Double
     let scale: Double
     
-    var textDescription: [String] {
-        [
-            animation,
-            curve,
-            String(format: "%.2f", force),
-            String(format: "%.2f", duration),
-            String(format: "%.2f", delay),
-            String(format: "%.2f", damping),
-            String(format: "%.2f", velocity),
-            String(format: "%.2f", scale)
-        ]
+    var description: String {
+        """
+        preset: \(animation)
+        curve: \(curve)
+        force: \(String(format: "%.2f", force))
+        duration: \(String(format: "%.2f", duration))
+        delay: \(String(format: "%.2f", delay))
+        """
     }
 }
+
+extension Property {
+    static func getProperty() -> Property {
+        let property = Property(
+            animation: Spring.AnimationPreset.allCases.randomElement()?.rawValue ??
+                Spring.AnimationPreset.shake.rawValue,
+            curve: Spring.AnimationCurve.allCases.randomElement()?.rawValue ??
+                Spring.AnimationCurve.spring.rawValue,
+            force: Double.random(in: 0.5...2),
+            duration: Double.random(in: 1...2),
+            delay: Double.random(in: 0.5...1),
+            damping: Double.random(in: 1...2),
+            velocity: Double.random(in: 1...2),
+            scale: Double.random(in: 1...2)
+        )
+        return property
+    }
+}
+
 
 
 
